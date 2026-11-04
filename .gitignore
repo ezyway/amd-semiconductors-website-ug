@@ -1,0 +1,18 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+*.sublime-*
+
+# Logs and local state
+*.log
+php_errors.log
+
+# Product images uploaded through the admin panel live at upload/cpu and
+# upload/gpu next to the web root. Keep local copies out of git so the
+# repository stays small; recreate the folders when setting up.
+upload/
+!upload/.gitkeep

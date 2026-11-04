@@ -1,0 +1,20 @@
+# Normalise text to LF on commit; the 2019 sources were CRLF.
+* text=auto
+
+*.php   text
+*.css   text
+*.js    text
+*.sql   text
+*.md    text
+*.txt   text
+
+# Binary media and documents - never touch line endings
+*.docx  binary
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.mp4   binary
+*.ico   binary
