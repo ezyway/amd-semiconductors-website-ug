@@ -27,6 +27,8 @@ It was built for **BCA, V.J. Modha College, Porbandar (BKNMU)**, October 2019, a
 
 Previously published as `UGProject`; the folder was renamed in 2026 so the repository says what it contains.
 
+> **Sibling repository:** [amd-semiconductors-website-pg](https://github.com/ezyway/amd-semiconductors-website-pg) is the same application, one revision later — it adds the About Us page, the promo videos and the product images that are missing here. Start there to see the finished site; stay here to see how it was built.
+
 ## Features
 
 ### Public site
@@ -100,7 +102,7 @@ Full instructions, including XAMPP configuration and troubleshooting, are in **[
 
 ```bash
 # 1. Place the code so Apache sees it as /project
-git clone git@github.com:ezyway/amd-semiconductors-website.git /path/to/xampp/htdocs/project
+git clone git@github.com:ezyway/amd-semiconductors-website-ug.git /path/to/xampp/htdocs/project
 
 # 2. Start Apache + MySQL, then import the schema
 mysql -u root -p < database/schema.sql
@@ -116,6 +118,8 @@ mysql -u root -p < database/schema.sql
 - `upload/` is not committed, so product thumbnails (`upload/cpu/...`, `upload/gpu/...`) 404 until you add images or upload new products through the admin panel.
 - `assets/videos/` is not committed, so the `<video>` elements stay blank.
 - `aboutUS.php` is linked from both nav bars but missing from the snapshot, so "About Us" 404s.
+
+All three exist in the [PG sibling repository](https://github.com/ezyway/amd-semiconductors-website-pg) and can be copied across unchanged.
 
 ## How the pieces fit together
 

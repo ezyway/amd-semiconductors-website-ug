@@ -30,16 +30,16 @@ Clone into the document root under the exact name `project`:
 
 ```bash
 # XAMPP on Linux
-git clone git@github.com:ezyway/amd-semiconductors-website.git /opt/lampp/htdocs/project
+git clone git@github.com:ezyway/amd-semiconductors-website-ug.git /opt/lampp/htdocs/project
 
 # XAMPP on macOS
-git clone git@github.com:ezyway/amd-semiconductors-website.git /Applications/XAMPP/htdocs/project
+git clone git@github.com:ezyway/amd-semiconductors-website-ug.git /Applications/XAMPP/htdocs/project
 
 # XAMPP on Windows (Git Bash)
-git clone git@github.com:ezyway/amd-semiconductors-website.git /c/xampp/htdocs/project
+git clone git@github.com:ezyway/amd-semiconductors-website-ug.git /c/xampp/htdocs/project
 ```
 
-Confirm the tree looks like `.../htdocs/project/home.php` — not `.../htdocs/project/amd-semiconductors-website/home.php`.
+Confirm the tree looks like `.../htdocs/project/home.php` — not `.../htdocs/project/amd-semiconductors-website-ug/home.php`.
 
 ## 3. Create the database
 
@@ -114,5 +114,5 @@ These are properties of the snapshot, not setup mistakes:
 Apache alone is fine, but the hardcoded `localhost/project` means a real host breaks `nav.php`, `footer.php`, `admin/adminNav.php` and the upload paths. Options, in order of effort:
 
 1. Serve it at `http://<host>/project` and leave the code alone.
-2. Add a `/project` alias (`Alias /project "/srv/amd-semiconductors-website"`).
+2. Add a `/project` alias (`Alias /project "/srv/amd-semiconductors-website-ug"`).
 3. Grep for `localhost/project` and `"/project/upload/"` and replace the base path — the only real code edit required.
